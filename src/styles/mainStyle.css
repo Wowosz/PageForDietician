@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1,wght@0,400;1,700&display=swap');
 .mainBackground {
     background: #476572;
 }
@@ -30,9 +30,14 @@
 }
 .consultations {
     font-family: 'Lora', serif;
+    box-shadow: 1px 1px 26px 2px rgba(0,0,0,0.75);
 }
 .consulationMethod {
     border-width: 3px;
     border-style: solid;
     border-color: #9A9A98;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.consultationDescription {
+    color: #545454;
 }
