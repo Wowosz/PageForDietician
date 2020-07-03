@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,700&display=swap');
+.mainBackground {
+    background: #476572;
+}
+.about{
+    background: #c0d0d7;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+}
+.name {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 2vw;
+    letter-spacing: 2px;
+}
+.borderIMG{
+    border-width: 6px;
+    border-style: solid;
+    border-color: #9A9A98;
+    box-shadow: 40px 52px #D8C7BD;
+}
+.buttonUmow {
+    color: white;
+    transition: 0.3s;
+}
+.buttonUmow:hover {
+    background: #8caab7;
+    color: black !important;
+    transition: 0.3s;
+}
+.consultations {
+    font-family: 'Lora', serif;
+}
+.consulationMethod {
+    border-width: 3px;
+    border-style: solid;
+    border-color: #9A9A98;
+}

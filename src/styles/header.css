@@ -1,0 +1,19 @@
+.navi {
+    background:  #476572;
+}
+.banner {
+    background: #F8961E;
+}
+.ov-unset {
+    overflow: unset;
+}
+.newLine {
+    white-space: pre-line;
+}
+.footer{
+    background:  #476572;
+}
+.language {
+    position: absolute;
+    right: 0;
+}
