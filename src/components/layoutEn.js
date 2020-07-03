@@ -36,7 +36,7 @@ export default function LayoutEN({ children }) {
                     <AniLink className="px-2 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/">
                         PL
                     </AniLink>
-                    <AniLink className="px-2 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/">
+                    <AniLink className="px-2 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/en">
                         ENG
                     </AniLink>
                 </div>
@@ -50,6 +50,12 @@ export default function LayoutEN({ children }) {
                     <h2><i class="icofont-smart-phone"></i>509 702 011</h2>
                 </div>
             </div>
+            <div className="row justify-content-center footer">
+                <div className="col-6">
+                    <p className="text-center text-white">Copyright © 2020. All rights reserved.</p>
+                    <p className="text-center text-white">Created by <a className="text-white" href="https://www.linkedin.com/in/wojciech-szoda-0108811a9/">Wojciech Szoda</a></p>
+                </div>
+                </div>
         </footer>
     </div>
   );

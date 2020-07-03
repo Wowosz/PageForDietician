@@ -49,6 +49,12 @@ export default function Layout({ children }) {
                     <h2><a href="mailto:kontakt@ewafilip.pl" className="text-decoration-none text-white"><i class="icofont-email"></i>kontakt@ewafilip.pl</a></h2>
                     <h2><i class="icofont-smart-phone"></i>509 702 011</h2>
                 </div>
+                </div>
+            <div className="row justify-content-center footer">
+                <div className="col-6">
+                    <p className="text-center text-white">Copyright © 2020. All rights reserved.</p>
+                    <p className="text-center text-white">Created by <a className="text-white" href="https://www.linkedin.com/in/wojciech-szoda-0108811a9/">Wojciech Szoda</a></p>
+                </div>
             </div>
         </footer>
     </div>

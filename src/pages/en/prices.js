@@ -7,7 +7,7 @@ const Prices = () => (
     <Layout>
         <div className="row my-3"></div>
         <div className="row justify-content-center">
-            <h3 className="mainBackground text-white py-1 px-4 mt-4 consultations"><i>Konsultacje Online</i></h3>
+            <h3 className="mainBackground text-white py-1 px-4 mt-4 consultations"><i>Online Consultations</i></h3>
         </div>
         <div className="row mt-3 justify-content-around">
             <div className="col-lg-3 col-md-3 col-sm-5 col-8 consulationMethod mt-5 py-5">
@@ -16,7 +16,7 @@ const Prices = () => (
             </div>
             <div className="col-lg-3 col-md-3 col-sm-5 col-8 consulationMethod mt-5 py-5">
                 <h3 className="text-center mb-4">Mail<br></br>Consultation</h3>
-                <p className="mt-2 mb-5 text-center consultationDescription">After recieving the questionnaire consultations are conducted with mails</p>
+                <p className="mt-2 mb-5 text-center consultationDescription">After receiving the questionnaire consultation is continued via email.</p>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-5 col-8 consulationMethod mt-5 py-5">
                 <h2 className="text-center mb-5">Messenger</h2>
@@ -25,7 +25,7 @@ const Prices = () => (
         </div>
         <div className="row my-5"></div>
         <div className="row justify-content-center">
-            <h3 className="mainBackground text-white py-1 px-4 mt-4 consultations"><i>Cennik</i></h3>
+            <h3 className="mainBackground text-white py-1 px-4 mt-4 consultations"><i>Prices</i></h3>
         </div>
 
         <div className="row mt-3 justify-content-center">
