@@ -2,7 +2,7 @@ import React from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import "../styles/header.css";
 import "../styles/icofont/icofont.css";
-import "../styles/telephone/telephone.css"
+import Menu from "./menuEn";
 
 
 export default function LayoutEN({ children }) {
@@ -10,38 +10,12 @@ export default function LayoutEN({ children }) {
     <div className="fluid-container">
         <header className="">
             <div className="row justify-content-center">
-                <AniLink className="col-12 col-md-8 col-sm-12 col-lg-6" paintDrip to="/">
+                <AniLink className="col-12 col-md-8 col-sm-12 col-lg-6" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/">
                     <img className="col-12"src="https://static.wixstatic.com/media/a7f3f6_47f785a93ad340a4811da9f1fe69ae36~mv2.png/v1/fill/w_486,h_162,al_c,q_85,usm_0.66_1.00_0.01/Baner%25201_edited.webp" alt="banner"></img>
                 </AniLink>
             </div>
         </header>
-            <div className="">
-                <div className="d-flex navi justify-content-center">
-                    <AniLink className="px-2 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/en">
-                        Home
-                    </AniLink>
-                    <AniLink className="px-3 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/en/about/">
-                        About Me
-                    </AniLink>
-                    <AniLink className="px-2 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/en/prices/">
-                        Online Consultation
-                    </AniLink>
-                    <AniLink className="px-2 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/en/make-appoitment/">
-                        Appointments
-                    </AniLink>
-                    <AniLink className="px-2 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/en/make-appoitment/">
-                        Blog
-                    </AniLink>
-                <div className="language">
-                    <AniLink className="px-2 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/">
-                        PL
-                    </AniLink>
-                    <AniLink className="px-2 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/en">
-                        ENG
-                    </AniLink>
-                </div>
-                </div>
-            </div>
+        <Menu/>
         {children}
         <footer>
             <div className="row footer p-4 mt-4">
