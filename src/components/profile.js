@@ -9,15 +9,46 @@ const config = {
   readonly: false // all options from https://xdsoft.net/jodit/doc/
 }
 
+const handleSubmit = async (title, description, 
+  thumbnail) => {
+  fetch('localhost:7000/blog', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: {content: content, title: title }
+  })
+}
+
 return (
-          <JoditEditor
-            ref={editor}
-              value={content}
-              config={config}
-  tabIndex={1} // tabIndex of textarea
-  onBlur={newContent => {setContent(newContent); console.log(newContent)}} // preferred to use only this option to update the content for performance reasons
-              onChange={newContent => {}}
-          />
+  <div className="container">
+    <form>
+      <div className='row d-flex flex-column p-4'>
+        <label for='title'>Tytuł</label>
+        <input type='text' id='title' name='title'></input>
+        <label for='thumbnail'>Miniaturka</label>
+        <input type='textarea' id='thumbnail' name='thumbnail'></input>
+      </div>
+      <div className='row d-flex flex-column p-4'>
+        <label for='description'>Opis</label>
+        <textarea name='description'></textarea>
+      </div>
+      <JoditEditor
+        ref={editor}
+        value={content}
+        config={config}
+        tabIndex={1}
+        onBlur={newContent => {setContent(newContent); console.log(newContent)}}
+        onChange={newContent => {}}
+        />
+    </form>
+    <br></br>
+    <br></br>
+    <br></br>
+    <div className="row">
+
+    </div>
+  </div>
       );
 }
 export default Profile
