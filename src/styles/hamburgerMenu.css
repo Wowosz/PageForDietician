@@ -1,3 +1,9 @@
+@media only screen and (min-width: 768px) {
+  .hamburgerMenu{
+    display: none;
+  }
+}
+  
   .hamburger {
     padding: 10px;
     display: inline-block;
@@ -11,13 +17,6 @@
     transition: transform .3s .1s ease-in-out;
   }
   
-  .hamburger--active .wrapper:hover{
-    transform: translatex(-100%);
-  }
-  .wrapper:hover .hamburger--active {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-}
   .rightSide {
     flex-direction: row-reverse;
     transition: transform 1.3s .1s ease-in-out;
@@ -32,6 +31,7 @@
     height: 100px;
   }
   .hamburger__box {
+    z-index: 2001;
     width: 35px;
     height: 24px;
     display: inline-block;
@@ -81,9 +81,11 @@
   }
   
   .navigation {
+    z-index: 2000;
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: white;
+    color: black;
     position: absolute;
     top: 0;
     right: 0;

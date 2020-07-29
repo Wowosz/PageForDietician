@@ -16,7 +16,7 @@ export default function Layout({ children }) {
                 </AniLink>
             </div>
         </header>
-        {(window.innerWidth >= 768) ? <Menu/> : <HamburgerMenu/>}
+        <Menu/>
         {children}
         <footer>
             <div className="row footer p-4 mt-4">

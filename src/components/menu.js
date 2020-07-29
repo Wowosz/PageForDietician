@@ -1,6 +1,7 @@
 import React from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import "../styles/header.css";
+import "../styles/hamburgerMenu.css"
 import "../styles/icofont/icofont.css";
 
 class Menu extends React.Component {
@@ -12,6 +13,7 @@ class Menu extends React.Component {
     render(){
         return(
             <div>
+            <div className="topNaviBar">
                 <div className="d-flex navi justify-content-center">
                     
                     <AniLink className="px-2 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/">
@@ -43,7 +45,32 @@ class Menu extends React.Component {
                 </div>
                 </div>
             </div>
+
+             <div className="hamburgerMenu">
+                <div>
+                    <div>
+                        <button className={this.state.opened === true ? "hamburger hamburger--active" : "hamburger"} onClick={this.handleClick}>
+                            <span className="hamburger__box">
+                                <span className="hamburger__inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div className={this.state.opened === true ? "navigation navigation--active" : "navigation"}>
+                    <ul className="navigation__list pb-5 row justify-content-center">
+                        <li className="navigation__item pt-5"><a href="">Lorem</a></li>
+                        <li className="navigation__item"><a href="">Ipsum</a></li>
+                        <li className="navigation__item"><a href="">Dolor</a></li>
+                        <li className="navigation__item"><a href="">Sit</a></li>
+                    </ul>
+                </div>
+             </div>
+             </div>
         );
+    }
+
+    handleClick = () => {
+        this.state.opened === false ? this.setState({opened: true}) : this.setState({opened: false});
     }
 };
 
