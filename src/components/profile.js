@@ -45,6 +45,14 @@ return (
         <label for='description'>Opis</label>
         <textarea name='description' value={description} onChange={e => {setDescription(e.target.value)}}></textarea>
       </div>
+      {typeof window !=='undefined'? <JoditEditor
+        ref={editor}
+        value={content}
+        config={config}
+        tabIndex={1}
+        onBlur={newContent => {setContent(newContent); console.log(newContent)}}
+        onChange={newContent => {}}
+        /> : <div></div>}
       <JoditEditor
         ref={editor}
         value={content}

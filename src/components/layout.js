@@ -3,7 +3,6 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import "../styles/header.css";
 import "../styles/icofont/icofont.css";
 import Menu from "./menu";
-import HamburgerMenu from "./hamburgerMenu";
 
 
 export default function Layout({ children }) {

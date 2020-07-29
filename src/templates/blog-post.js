@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
   let disqusConfig = {
-    url: `${window.location.href}`,
+    url: `wojciechszoda.pl/blog/${post.frontmatter.title}`,
     identifier: post.id,
     title: post.frontmatter.title,
   }
