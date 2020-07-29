@@ -36,6 +36,7 @@ query {
             date(formatString: "DD MMMM, YYYY")
             title
             description
+            thumbnail
           }
           fields{
               slug

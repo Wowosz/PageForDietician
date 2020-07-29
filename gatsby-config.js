@@ -30,6 +30,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `ewafilip`
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
