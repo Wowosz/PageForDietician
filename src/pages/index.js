@@ -1,14 +1,10 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Carousel } from "react-bootstrap"
-import Image1 from "../images/brooke-lark-M4E7X3z80PQ-unsplash.jpg"
 import "../styles/mainStyle.css"
-import Post from '../components/postTemplate'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql } from "gatsby";
 
 export default function IndexPage({data}) {
   console.log(data.allMarkdownRemark)
@@ -17,28 +13,14 @@ export default function IndexPage({data}) {
       <SEO title="Home" />
 
 
-      <div className="row vh-100">
-        <Carousel className="carousel-inner">
-          <Carousel.Item className="carousel-inner">
-            <img
-              className="d-block w-100 carousel-inner"
-              src={Image1}
-              alt="First slide"
-            />
-            <Carousel.Caption className="label h-100 w-50 mx-auto">
-              <div className="label_text mb-4 mx-auto w-100 mt-5">
-                <h2 >Umów Się!</h2>
-                <h5>Czekając na lepsze czasy, możesz nigdy nie ruszyć z miejsca</h5>
-              </div>
-              <AniLink duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/umow-sie">
-                <a className="button mx-auto mb-5 text-decoration-none">Umów się</a>
-              </AniLink>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+      <div className="row with-image">
+        <div className="bg vw-100 row justify-content-center ml-1">
+          <h1 className="title p-2">Nie marnuj życia!</h1>
+          <h1 className="imgButton p-3"><a href="/umow-sie/" className="text-decoration-none link">Umów się!</a></h1>
+        </div>
       </div>
       <div id="obszary">
-      <div className="row mt-5 justify-content-center navi mb-4">
+      <div className="row justify-content-center navi mb-4">
         <h2 className="m-0 py-4 text-white font">Obszary Działania</h2>
       </div>
       <div className="row justify-content-center">
@@ -76,36 +58,7 @@ export default function IndexPage({data}) {
         </div>
       </div>
       </div>
-      <div id="ostatie-posty">       
-        <div className="row mt-5 justify-content-center navi mb-4">
-          <h2 className="m-0 py-4 text-white font">Ostatnie Artykuły</h2>
-        </div>
-
-        <div className="row justify-content-center">
-          {data.allMarkdownRemark.edges.map(({node}) => <Post node={node} size='small'/>)}
-        </div>
-      </div>
     </Layout>
   )
 }
 
-export const query = graphql`
-query MyQuery {
-  allMarkdownRemark(limit: 3, sort: {order: DESC, fields: frontmatter___date}) {
-    edges {
-      node {
-        id
-        timeToRead
-        frontmatter {
-          date(formatString: "DD MMMM, YYYY")
-          title
-          thumbnail
-        }
-        fields {
-          slug
-        }
-      }
-    }
-  }
-}
-`

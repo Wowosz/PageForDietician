@@ -25,9 +25,6 @@ class Menu extends React.Component {
                     <AniLink className="px-2 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/en/make-appoitment/">
                         Appointments
                     </AniLink>
-                    <AniLink className="px-2 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/en/make-appoitment/">
-                        Blog
-                    </AniLink>
                 <div className="language">
                     <AniLink className="px-2 py-3 text-decoration-none text-white" duration={0.5} hex="#FFFFFF" swipe direction="left" entryOffset={80} to="/">
                         PL
