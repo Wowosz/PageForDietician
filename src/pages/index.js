@@ -17,7 +17,7 @@ export default function IndexPage({data}) {
       <SEO title="Home" />
 
 
-      <div className="row">
+      <div className="row vh-100">
         <Carousel className="carousel-inner">
           <Carousel.Item className="carousel-inner">
             <img
