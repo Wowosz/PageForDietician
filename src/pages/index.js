@@ -7,7 +7,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export default function IndexPage({data}) {
-  console.log(data.allMarkdownRemark)
   return (
     <Layout>
       <SEO title="Home" />
